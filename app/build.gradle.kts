@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "me.qrcompose.krisna"
-        minSdk = 23
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -70,4 +70,11 @@ dependencies {
     // ZXING
     implementation("com.journeyapps:zxing-android-embedded:4.1.0")
     implementation("com.google.zxing:core:3.4.0")
+
+    //camerax
+    val cameraVersion = "1.3.1"
+    implementation("androidx.camera:camera-lifecycle:$cameraVersion")
+    implementation("androidx.camera:camera-camera2:$cameraVersion")
+    implementation("androidx.camera:camera-view:$cameraVersion")
+    implementation("androidx.camera:camera-core:$cameraVersion")
 }
